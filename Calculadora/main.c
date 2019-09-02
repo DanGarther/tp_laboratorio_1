@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <libreria.h>
 
 int main()
 {
@@ -29,26 +30,29 @@ int main()
 
         switch(respues){
         case '1':
-        result = num1+num2;
+        result = suma(int num1, int num2);
+
         break;
 
         case '2':
-        result = num1-num2;
+
+        result = resta(int num1, int num2);
+
         break;
 
         case '3':
-        result = num1*num2;
+        result = multiplicar(int num1, int num2);
         break;
 
         case '4':
-        result = num1/num2;
+        result = dividir(int num1, int num2);
         break;
 
         case '5':
         result = num1-num2;
         break;
 
-        case '6':
+        default:
 
         printf("¿Desea salir?\n");
         fflush(stdin);
@@ -60,10 +64,13 @@ int main()
   printf("Su resultado es %d \n", result);
 
 
+ system("pause");
+ system("cls");
+
     }while(respues != 's');
 
 
 
-    return 0;
+    return 1;
 
 }
