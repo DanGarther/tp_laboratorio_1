@@ -1,5 +1,9 @@
 # depslib dependency file v1.0
-1567087918 source:c:\users\alumno\desktop\tp_laboratorio_1\calculadora\main.c
+1567522009 source:c:\users\alumno\desktop\tp_laboratorio_1\calculadora\main.c
 	<stdio.h>
 	<stdlib.h>
+	"libreria.h"
+
+1567522079 c:\users\alumno\desktop\tp_laboratorio_1\calculadora\libreria.h
+	<stdio.h>
 

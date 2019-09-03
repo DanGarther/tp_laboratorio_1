@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <libreria.h>
+#include "libreria.h"
 
 int main()
 {
@@ -9,15 +9,13 @@ int main()
     int result;
     char respues;
 
-    printf("Ingrese primer numero: \n");
-    fflush(stdin);
-    scanf("%d", &num1);
-    printf("Ingrese segundo numero: \n");
-    fflush(stdin);
-    scanf("%d", &num2);
+
 
     do{
-        printf("¿Que desea hacer con estos numeros?\n");
+
+
+        printf("Elija una opcion por favor.0\n");
+        printf("0) Ingresar datos.\n");
         printf("1) Sumarlos.\n");
         printf("2) Restarlos.\n");
         printf("3) Multiplicarlos.\n");
@@ -29,39 +27,73 @@ int main()
 
 
         switch(respues){
+
+       case '0':
+
+    printf("Ingrese primer numero: \n");
+    fflush(stdin);
+    scanf("%d", &num1);
+    printf("Ingrese segundo numero: \n");
+    fflush(stdin);
+    scanf("%d", &num2);
+
+
+
         case '1':
-        result = suma(int num1, int num2);
+
+//       result = sumaDeNumeros(num1, num2);
+          printf("Su resultado es %d \n", result);
 
         break;
 
         case '2':
 
-        result = resta(int num1, int num2);
+        //result = resta(num1, num2);
+         printf("Su resultado es %d \n", result);
 
         break;
 
         case '3':
-        result = multiplicar(int num1, int num2);
+        /** \brief
+         *
+         * \param num1
+         * \param num2
+         * \return result=
+         *
+         */
+        result = multiplicar(num1, num2);
+         printf("Su resultado es %d \n", result);
         break;
 
         case '4':
-        result = dividir(int num1, int num2);
+        //result = dividir(num1, num2);
+         printf("Su resultado es %d \n", result);
+
         break;
 
         case '5':
-        result = num1-num2;
+       //result = factorial(num1, num2);
+         printf("Su resultado es %d \n", result);
+
         break;
 
-        default:
+        case '6':
 
         printf("¿Desea salir?\n");
         fflush(stdin);
         scanf("%c", &respues);
         break;
+
+        default:
+
+            printf("No es una opcion valida\n");
+
+        break;
+
         }
 
 
-  printf("Su resultado es %d \n", result);
+
 
 
  system("pause");
@@ -71,6 +103,6 @@ int main()
 
 
 
-    return 1;
+    return 0;
 
 }

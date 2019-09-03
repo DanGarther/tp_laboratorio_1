@@ -1,10 +1,18 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-suma(int, int);
+/** \brief
+ *
+ * \param int
+ * \param int
+ * \return int
+ *
+ */
+int sumaDeNumeros(int, int);
 
-resta(int, int);
+int resta(int, int);
 
-multiplicar(int, int);
+int multiplicar(int, int);
 
-dividir(int, int);
+int dividir(int, int);
+
+int factorial(int, int);

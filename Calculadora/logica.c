@@ -1,44 +1,66 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "libreria.h"
 
-suma(int num1, int num2){
-int result;
 
-result = num1 + num1;
+int sumaDeNumeros(int num1, int num2){
 
-return result;
+int total;
+
+total = num1 + num2;
+
+return total;
 }
 
 
-resta(int num1, int num2){
+int resta(int num1, int num2){
 
 int result;
 
-result = num1 - num1;
+result = num1 - num2;
 
 return result;
 
 }
 
 
-multiplicar(int num1, int num2){
+int multiplicar(int num1, int num2){
 
     int result;
 
-result = num1 * num1;
+result = num1 * num2;
 
 return result;
 
 }
 
 
-dividir(int num1, int num2){
+int dividir(int num1, int num2){
 
 int result;
 
-result = num1 / num1;
+result = num1 / num2;
 
 return result;
 
 
+}
+
+
+int factorial(int num1, int num2){
+int num3;
+int i;
+int total=1;
+
+num3 = num1 + num2;
+
+for(i = num3; i >= 1; i--){
+
+
+
+    total = total * i;
+
+
+
+}
+
+return num3;
 }
