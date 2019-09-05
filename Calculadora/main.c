@@ -41,14 +41,14 @@ int main()
 
         case '1':
 
-//       result = sumaDeNumeros(num1, num2);
+           result = sumaDeNumeros(num1, num2);
           printf("Su resultado es %d \n", result);
 
         break;
 
         case '2':
 
-        //result = resta(num1, num2);
+        result = resta(num1, num2);
          printf("Su resultado es %d \n", result);
 
         break;
@@ -66,13 +66,13 @@ int main()
         break;
 
         case '4':
-        //result = dividir(num1, num2);
+        result = dividir(num1, num2);
          printf("Su resultado es %d \n", result);
 
         break;
 
         case '5':
-       //result = factorial(num1, num2);
+       result = factorial(num1, num2);
          printf("Su resultado es %d \n", result);
 
         break;

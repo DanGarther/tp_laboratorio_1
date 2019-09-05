@@ -7,12 +7,12 @@
  * \return int
  *
  */
-int sumaDeNumeros(int, int);
+int sumaDeNumeros(int num1, int num2);
 
-int resta(int, int);
+int resta(int num1, int num2);
 
-int multiplicar(int, int);
+int multiplicar(int num1, int num2);
 
-int dividir(int, int);
+int dividir(int num1, int num2);
 
-int factorial(int, int);
+int factorial(int num1, int num2);
