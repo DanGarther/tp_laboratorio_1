@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1570216035 source:c:\users\ferh\desktop\empleados (tp2)\funciones.c
+	"funciones.h"
+
+1570215945 c:\users\ferh\desktop\empleados (tp2)\funciones.h
+	<stdio.h>
+	<string.h>
+
